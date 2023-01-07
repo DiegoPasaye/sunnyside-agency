@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+main{
+    width: 98vw;
+}
+html{
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navigationDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.logo{
+    padding: 2%;
+}
+.links{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Barlow', sans-serif;
+}
+.navigation{
+    background: url(images/desktop/image-header.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+.contact{
+    background: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    border-radius: 20px;
+    margin-top: -1%;
+}
+.middle{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    background: white;
+    font-family: 'Fraunces', serif;
+}
+.middle p{
+    font-family: 'Barlow', sans-serif;
+}
+.middleText{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4vw;
+}
+.navText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.navText h1{
+    font-size: 64px;
+    padding-top: 7%;
+    color: white;
+}
+.navText img{
+    padding-top: 8%;
+}
+
+.middle img{
+    width: 100%;
+}
+.topp{
+    color: hsl(210, 4%, 67%);
+}
+.toph2{
+    color: black;
+}
+.designDiv{
+    background: url(images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(167, 40%, 24%);
+}
+.designDiv p{
+    width: 50%;
+    text-align: center;
+    color: hsl(167, 40%, 24%);
+}
+.middleh2{
+    margin-top: 55%;
+    padding-bottom: 5%;
+}
+.photoDiv{
+    background: url(images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(198, 62%, 26%);
+}
+.photoDiv p{
+    width: 50%;
+    text-align: center;
+}
+
+
+
+.clients{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+}
+.clientSection{
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3vw;
+}
+.clientSection h1{
+    color: hsl(210, 4%, 67%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.clientDescription{
+    color: hsl(213, 9%, 39%);
+}
+.office{
+    color: hsl(210, 4%, 67%);
+    font-family: 'Barlow', sans-serif;
+}
+.name{
+    margin-top: 3vw;
+    color: back;
+    font-family: 'Fraunces', serif;
+}
+.clientSection p{
+    line-height: 20px;
+    width: 70%;
+    margin-left: 15%;
+}
+.clientSection img{
+    margin-bottom: 2vw;
+    width: 5vw;
+    border-radius: 50%;
+}
+
+
+.bottomImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+}
+.bottomImages img{
+    width: 100%;
+}
+
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(232, 10%, 55%);
+    background-color: hsl(168, 32%, 55%);;
+    color: hsl(167, 40%, 24%);
+}
+.huevo{
+    box-shadow: 0 4px 0 0 hsl(51, 100%, 49%);
+}
+.copa{
+    box-shadow: 0 4px 0 0 hsl(7, 99%, 70%);
+}
+footer h2{
+    margin-top: 4%;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.arefs{
+    padding-top: 3%;
+}
+.arefs a{
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+.arefs a:link{
+    text-decoration: none;
+    color: hsl(167, 40%, 24%);
+}
+.arefs a:visited{
+    color: hsl(167, 40%, 24%);
+    text-decoration: none;
+}
+.iconsDiv{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.iconsDiv img{
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+@media (max-width: 1000px){
+    .middle{
+        display: flex;
+    }
+}
