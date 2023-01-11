@@ -7,6 +7,12 @@ html{
     margin: 0;
     padding: 0;
 }
+.linksDiv{
+    display: flex;
+    width: 100%;
+    gap: 3vw;
+    align-items: center;
+}
 *{
     margin: 0;
     padding: 0;
@@ -50,10 +56,12 @@ html{
 .middle{
     display: grid;
     width: 100%;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr 1fr 1fr;
     background: white;
     font-family: 'Fraunces', serif;
+}
+.middleFirst, .middleSecond, .middleThird{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .middle p{
     font-family: 'Barlow', sans-serif;
@@ -76,6 +84,9 @@ html{
     font-size: 64px;
     padding-top: 7%;
     color: white;
+}
+.linksMobile{
+    display: none;
 }
 .navText img{
     padding-top: 8%;
@@ -221,7 +232,149 @@ footer h2{
 }
 
 @media (max-width: 1000px){
+    .navigationDiv{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .burgerIcon{
+        content: url(images/icon-hamburger.svg);
+        float: right;
+        padding-top: 2%;
+    }
+    .links, .linksDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .links{
+        display: none;
+        width: 80%;
+        background: white;
+        color: black;
+    }
     .middle{
         display: flex;
+        flex-direction: column;
+    }
+    .middleFirst, .middleSecond, .middleThird{
+        display: flex;
+        flex-direction: column;
+    }
+    .middleText{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-left: 10%;
+        gap: 8vw;
+        align-items: center;
+        text-align: center;
+    }
+    .middleh2{
+        margin-top: 50%;
+    }
+    .designDiv p{
+        width: 80%;
+        padding-bottom: 5vh;
+    }
+    .photoDiv p{
+        width: 80%;
+        padding-bottom: 5vh;
+    }
+    .clientSection{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .clients{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .clientSection img{
+        width: 10vw;
+    }
+    .clientSection p{
+        width: 80%;
+        margin-left: 10%;
+    }
+    .bottomImages{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .middleFirst{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .linksMobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: white;
+        width: 80%;
+        position: fixed;
+        height: 50vh;
+        gap: 5vh;
+        margin-left: 10%;
+        justify-content: center;
+        visibility: hidden;
+        margin-top: 5%;
+        z-index: 1;
+    }
+    .linksMobile::before{
+        content: "";
+        border-left: 30px solid transparent;
+        border-right: 30px solid white;
+        border-top: 30px solid transparent;
+        position: absolute;
+        top: -28px; /* Altura de la flecha */
+        left: 93.2%; /* Posición horizontal centrada */
+        margin-left: -10px; /* Anchura de la flecha */
+        z-index: 10;
+    }
+    .contactMobile{
+        background: yellow;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: black;
+        border-radius: 20px;
+        margin-top: -1%;
+    }
+    footer{
+        height: 35vh;
+        padding-top: 5vh;
+    }
+}
+@media (max-width: 850px){
+    .linksMobile::before{
+        position: absolute;
+        left: 92.2%;
+    }
+}
+@media (max-width: 750px){
+    .linksMobile::before{
+        position: absolute;
+        left: 91.2%;
+    }
+}
+@media (max-width: 650px){
+    .linksMobile::before{
+        position: absolute;
+        left: 90.2%;
+    }
+}
+@media (max-width: 550px){
+    .linksMobile::before{
+        position: absolute;
+        left: 89.2%;
+    }
+}
+@media (max-width: 450px){
+    .linksMobile::before{
+        position: absolute;
+        left: 88.2%;
     }
 }
